@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            width: 400px;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding and border in width calculation */
+            font-size: 16px;
+        }
+
+        input[type="button"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            font-size: 24px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table border="0">
+            <tbody>
+                <tr>
+                    <th>Contact Us!</th>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Name...."></td>
+                </tr>
+                <tr>
+                    <td><input type="email" placeholder="Email...."></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Subject...."></td>
+                </tr>
+                <tr>
+                    <td><textarea style="width: 385px; font-size: 18px;" placeholder="Message....." rows="6"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="SEND MESSAGE"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

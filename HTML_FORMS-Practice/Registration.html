@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        input{
+            height: 24px;
+            width: 250px;
+        }
+        tr{
+            background-color: lightskyblue;
+        }
+        td{
+            font-size: 20px;
+            padding: 2px 10px;
+        }
+        th{
+            font-size: 24px;
+            background-color: lightgoldenrodyellow;
+            color: red;
+        }
+        .button-container input {
+            height: 40px;
+            width: 30%; 
+            margin-right: 2%;
+            float: left;
+            margin-top: 2px;
+        }
+
+            /* Clear floating elements */
+        .button-container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        form{
+            width: 700px;
+        }
+        table{
+            width: 600px;
+        }
+        .checkbox{
+            width: 50px;
+        }
+        select{
+            height: 28px;
+            width: 200px;
+            font-size: 18px;
+            color: rgb(95,95,95);
+        }
+        .input-file{
+            font-size: 18px;
+        }
+        .btn{
+            font-size: 18px;
+        }
+
+        .gender-radio input{
+            width: 100px;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <form style="font-size: 16px;" action="">
+        <table border="3" cellspacing="5px">
+            <tbody>
+                <tr>
+                    <th colspan="2">Registration Form</th>
+                </tr>
+                <tr>
+                    <td>
+                        Enter Name
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enter Address
+                    </td>
+                    <td>
+                        <textarea rows="3" style="width: 270px;height: 95px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select Game
+                    </td>
+                    <td>
+                        <input class="checkbox" type="checkbox">Hockey
+                        <br>
+                        <input class="checkbox" type="checkbox">Football
+                        <br>
+                        <input class="checkbox" type="checkbox">Badminton
+                        <br>
+                        <input class="checkbox" type="checkbox">Cricket
+                        <br>
+                        <input class="checkbox" type="checkbox">Volleyball
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td class="gender-radio">
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Select Your Age</td>
+                    <td>
+                        <select>
+                            <option>SELECT</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>More Than 22</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select Photo
+                    </td>
+                    <td>
+                        <input class="input-file" type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding: 1px 10px;">
+                      <div class="button-container">
+                        <input class="btn" type="button" value="Click Me">
+                        <input class="btn" type="button" value="Reset">
+                        <input class="btn" type="button" value="Submit Form">
+                      </div>
+                    </td>
+                  </tr>                
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
